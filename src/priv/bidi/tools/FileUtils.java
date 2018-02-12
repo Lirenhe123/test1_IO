@@ -95,8 +95,8 @@ public class FileUtils {
 	
 	public static void main(String[] args) throws FileNotFoundException, IOException {
 		String srcPath="E:\\WorkSpace03\\bxkc_data_storage_service_generator\\outputFiles\\service.impl";
-		String destPath="E:\\WorkSpace04\\171215新增网站-分配表\\src\\com\\bidizhaobiao\\data\\crawl\\service\\impl";
-		String regex="(Y).*\\.java";
+		String destPath="E:\\WorkSpace04\\171228\\src\\com\\bidizhaobiao\\data\\crawl\\service\\impl";
+		String regex="(Y|XX).*\\.java";
 		FileUtils tool=new FileUtils();
 		List<String> filePathList=tool.matchSrcPath(srcPath,regex);
 		for(String filePath:filePathList){
